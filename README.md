@@ -27,23 +27,22 @@ A **Golang-based Maker-Checker Approval System** where users can send messages r
 
 ## Project Structure
 
-```plaintext
-maker_checker_sqlite/
-├── Dockerfile                # Docker configuration for containerization
-├── docker-compose.yml        # Docker Compose configuration
-├── main.go                   # Entry point of the application
-├── go.mod                    # Go module dependencies
-├── go.sum                    # Dependency checksums
-├── src/
-│   ├── application/          # Application logic
-│   ├── domain/               # Domain entities and interfaces
-│   │   ├── entities/         # Message entity definition
-│   │   ├── repositories/     # Repository interface
-│   ├── infrastructure/       # API and persistence logic
-│   │   ├── api/              # API handlers
-│   │   └── persistence/      # SQLite repository implementation
-│   ├── services/             # Business services (if needed)
-└── data/                     # Directory for SQLite database
+    maker_checker_sqlite/
+    ├── Dockerfile                # Docker configuration for containerization
+    ├── docker-compose.yml        # Docker Compose configuration
+    ├── main.go                   # Entry point of the application
+    ├── go.mod                    # Go module dependencies
+    ├── go.sum                    # Dependency checksums
+    ├── src/
+    │   ├── application/          # Application logic
+    │   ├── domain/               # Domain entities and interfaces
+    │   │   ├── entities/         # Message entity definition
+    │   │   ├── repositories/     # Repository interface
+    │   ├── infrastructure/       # API and persistence logic
+    │   │   ├── api/              # API handlers
+    │   │   └── persistence/      # SQLite repository implementation
+    │   ├── services/             # Business services (if needed)
+    └── data/                     # Directory for SQLite database
 
 
 ### Steps to Run the Application
@@ -110,5 +109,5 @@ If the message is already approved or not in a pending state:
 ## Logs and Debugging
    1. View Logs
    To view container logs:
-   
+
     docker-compose logs -f
