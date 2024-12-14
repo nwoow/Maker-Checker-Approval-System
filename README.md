@@ -42,7 +42,6 @@ A **Golang-based Maker-Checker Approval System** where users can send messages r
     │   │   ├── api/              # API handlers
     │   │   └── persistence/      # SQLite repository implementation
     │   ├── services/             # Business services (if needed)
-    └── data/                     # Directory for SQLite database
 
 
 ### Steps to Run the Application
