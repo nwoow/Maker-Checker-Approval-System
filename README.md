@@ -54,7 +54,7 @@ A **Golang-based Maker-Checker Approval System** where users can send messages r
 
 
 2. Build and Run with Docker Compose:
-Build and start the application:
+   Build and start the application:
 
     docker-compose up --build
 
